@@ -13,7 +13,7 @@ namespace WordCount.Tests
             string userInput = "the cancan is a can do dance";
             string userWord = "can";
             bool expected = true;
-            bool actual = CheckForWord.Finder(userInput, userWord);
+            bool actual = CheckForWord.WordFinder(userInput, userWord);
 
             Assert.AreEqual(expected, actual);
         }

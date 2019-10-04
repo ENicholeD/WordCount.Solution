@@ -9,7 +9,7 @@ using WordCount.Models;
             string UserInput = Console.ReadLine();
             Console.WriteLine("enter a word");
             string UserWord = Console.ReadLine();
-            CheckForWord.Finder(UserInput, UserWord);
+            CheckForWord.WordFinder(UserInput, UserWord);
         }
         
     }
