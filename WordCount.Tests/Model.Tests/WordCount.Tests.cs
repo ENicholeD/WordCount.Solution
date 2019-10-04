@@ -7,11 +7,15 @@ namespace WordCount.Test
     [TestClass]
     public class WordTest
     {
-        public static string UserSentence = "The Coyote loves to eat candycane coated cottencandy";
-        public static string UserWord = "Candy";
-        bool ContainingWord = UserSentence.Contains(UserWord);
+        [TestMethod]
+        public void CheckIfWordInSentence_CompareWordToSentence_True()
         {
-            
+                string UserSentence = "Candied candycanes";
+                string UserWordInput = "can";
+                bool Actual = WordSearching.Finder(UserSentence, UserWordInput);
+                bool Expected = true;
+
+                    Assert.AreEqual(Expected, Actual);
         }
     }
 }
