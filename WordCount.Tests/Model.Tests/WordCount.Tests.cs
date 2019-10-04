@@ -2,20 +2,20 @@ using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using WordCount.Models;
 
-namespace WordCount.Test
+namespace WordCount.Tests
 {
     [TestClass]
     public class WordTest
     {
         [TestMethod]
-        public void CheckIfWordInSentence_CompareWordToSentence_True()
+        public void CheckIfSentence_ChecksIfHasWord_True()
         {
-                string UserSentence = "Candied candycanes";
-                string UserWordInput = "can";
-                bool Actual = WordSearching.FindWord(UserSentence, UserWordInput);
-                bool Expected = true;
+            string userInput = "the cancan is a can do dance";
+            string userWord = "can";
+            bool expected = true;
+            bool actual = CheckForWord.Finder(userInput, userWord);
 
-                    Assert.AreEqual(Expected, Actual);
+            Assert.AreEqual(expected, actual);
         }
     }
 }

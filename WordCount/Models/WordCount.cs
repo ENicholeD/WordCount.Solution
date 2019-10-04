@@ -1,21 +1,14 @@
 using System;
+using System.Text.RegularExpressions;
+using System.Linq;
 
 namespace WordCount.Models
 {
-    public class WordSearching
+    public class CheckForWord
     {
-        public string UserInput;
-        public string UserWord;
-        public static bool FindWord(string UserInput, string UserWord)
-        {
-            UserInput.Split("can");
-
-            if(UserInput.Contains(UserWord))
-            {
-                Console.WriteLine(UserInput);
-                
-            }
-            
-        }
+       public static bool Finder(string UserInput, string UserWord)
+       {
+           bool TrueFalse = UserInput.Contains(UserWord);
+       }
     }
 }

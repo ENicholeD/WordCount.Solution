@@ -1,15 +1,15 @@
 using System;
 using WordCount.Models;
 
-namespace WordCount
-{
-    public class Wording
+    public class Program
     {
         public static void Main()
         {
             Console.WriteLine("Write a sentence");
             string UserInput = Console.ReadLine();
-
+            Console.WriteLine("enter a word");
+            string UserWord = Console.ReadLine();
+            CheckForWord.Finder(UserInput, UserWord);
         }
+        
     }
-}
