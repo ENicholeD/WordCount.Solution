@@ -12,10 +12,10 @@ This program was writen to showcase my understanding of C# testing by searching 
 
 | Behavior | Input | Output |
 | ------------- |:-------------:| -----:|
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
+| user enters a sentence | "Hi there, Theodore!" | sentence gets stored in a variable |
+| user enters a word to count | "the" | word gets stored in a variable |
+| compares both word and sentence to see if sentence contains word | "Hi there, Theodore!", "the" | Sentence does contain the word |
+| counts how many instaces of that word apears | "Hi 'the'-re, 'the'-odore!" |  |
 |  |  |  |
 
 ## Setup Instructions
