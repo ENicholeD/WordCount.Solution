@@ -10,6 +10,7 @@ namespace WordCount.Models
            if(TrueFalse == true)
            {
                Console.WriteLine("worked!");
+               InstancesOfWord(UserInput, TrueFalse);
            }
            else
            {
@@ -17,15 +18,18 @@ namespace WordCount.Models
            }
            return TrueFalse;
        }
-       public static int InstancesOfWord(string UserInput, string UserWord, bool TrueFalse)
+       public static int InstancesOfWord(string UserInput, bool TrueFalse)
        {
-           string[] SplitSentence = UserInput.Split(" ");
-           int num = 0;
-           for(int i = 0; i < SplitSentence.Length; i++)
-           {
-               int src = UserInput.IndexOf(UserWord);
-           }
-           return num;
+           
+            int num = 0;
+            string[] SentenceSplit = UserInput.Split(" ");
+            if(TrueFalse == true)
+            {
+                
+               Console.WriteLine("there are " + num + " instances of your word in your sentence!");
+            }
+            
+            return num;
        }
     }
 }
