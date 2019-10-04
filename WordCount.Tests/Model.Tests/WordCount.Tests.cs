@@ -17,5 +17,16 @@ namespace WordCount.Tests
 
             Assert.AreEqual(expected, actual);
         }
+        [TestMethod]
+        public void CheckHowOftenWordAppears_CheckForWordInstance_Int()
+        {
+            string userInput = "carnival carnies care";
+            string userWord = "car";
+            bool Boolean = true;
+            int expected = 3;
+            int actual = CheckForWord.InstancesOfWord(userInput, userWord, Boolean);
+
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
