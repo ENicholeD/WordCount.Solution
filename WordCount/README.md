@@ -1,12 +1,12 @@
 # WordCount.Solution
 
-summary here
+This program showcases my understanding of C# testing.
 
-#### By Erin Deuel on 9/27/2019
+#### By Erin Deuel on 10/4/2019
 
 ## Description
 
-description here
+This program was writen to showcase my understanding of C# testing by searching for specific words inside of sentences. I made this during my time at Epicodus.
 
 ## Specs
 

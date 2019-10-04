@@ -17,5 +17,15 @@ namespace WordCount.Models
            }
            return TrueFalse;
        }
+       public static int InstancesOfWord(string UserInput, string UserWord, bool TrueFalse)
+       {
+           string[] SplitSentence = UserInput.Split(" ");
+           int num = 0;
+           for(int i = 0; i < SplitSentence.Length; i++)
+           {
+               int src = UserInput.IndexOf(UserWord);
+           }
+           return num;
+       }
     }
 }
