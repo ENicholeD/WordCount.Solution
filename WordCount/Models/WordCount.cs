@@ -11,6 +11,10 @@ namespace WordCount.Models
            {
                Console.WriteLine("worked!");
            }
+           else
+           {
+               Console.WriteLine("I couldn't find anything with that word.");
+           }
            return TrueFalse;
        }
     }
