@@ -1,0 +1,4 @@
+/Users/Guest/Desktop/WordCount.Solution/WordCount/obj/Debug/netcoreapp2.2/WordCount.csprojAssemblyReference.cache
+/Users/Guest/Desktop/WordCount.Solution/WordCount/obj/Debug/netcoreapp2.2/WordCount.csproj.CoreCompileInputs.cache
+/Users/Guest/Desktop/WordCount.Solution/WordCount/obj/Debug/netcoreapp2.2/WordCount.AssemblyInfoInputs.cache
+/Users/Guest/Desktop/WordCount.Solution/WordCount/obj/Debug/netcoreapp2.2/WordCount.AssemblyInfo.cs

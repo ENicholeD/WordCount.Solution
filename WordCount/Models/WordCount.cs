@@ -6,12 +6,16 @@ namespace WordCount.Models
     {
         public string UserInput;
         public string UserWord;
-        public static bool Finder(string UserInput, string UserWord)
+        public static bool FindWord(string UserInput, string UserWord)
         {
+            UserInput.Split("can");
+
             if(UserInput.Contains(UserWord))
             {
-                Console.WriteLine("this is true");
+                Console.WriteLine(UserInput);
+                
             }
+            
         }
     }
 }

@@ -12,7 +12,7 @@ namespace WordCount.Test
         {
                 string UserSentence = "Candied candycanes";
                 string UserWordInput = "can";
-                bool Actual = WordSearching.Finder(UserSentence, UserWordInput);
+                bool Actual = WordSearching.FindWord(UserSentence, UserWordInput);
                 bool Expected = true;
 
                     Assert.AreEqual(Expected, Actual);
