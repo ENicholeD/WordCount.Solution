@@ -4,13 +4,17 @@ namespace WordCount.Models
 {
     public class CheckForWord
     {
+        
        public static bool WordFinder(string UserInput, string UserWord)
        {
-           bool TrueFalse = UserInput.Contains(UserWord);
+           string lowerInput = UserInput.ToLower();
+           string lowerWord = UserWord.ToLower();
+           bool TrueFalse = lowerInput.Contains(lowerWord);
+           Console.WriteLine(lowerInput);
            if(TrueFalse == true)
            {
                Console.WriteLine("worked!");
-               InstancesOfWord(UserInput, UserWord, TrueFalse);
+               InstancesOfWord(lowerInput, lowerWord, TrueFalse);
            }
            else
            {
@@ -18,16 +22,19 @@ namespace WordCount.Models
            }
            return TrueFalse;
        }
+
        public static int InstancesOfWord(string UserInput, string UserWord, bool TrueFalse)
        {
            
             int num = 0;
-            string[] SentenceSplit = UserInput.Split(" ");
+            string lowerInput = UserInput.ToLower();
+            string lowerWord = UserWord.ToLower();
+            string[] SentenceSplit = lowerInput.Split(" ");
             if(TrueFalse == true)
             {
                 for(int i = 0; i < SentenceSplit.Length; i ++)
                 {
-                    if(SentenceSplit[i].Contains(UserWord))
+                    if(SentenceSplit[i].Contains(lowerWord))
                     {
                         num ++;
                     }
